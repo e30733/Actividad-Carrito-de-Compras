@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>Carrito de Compras</h1>
+                <form id="cart-form">
+                    <div class="form-group">
+                        <label for="nombreCliente">Nombre del Cliente</label>
+                        <input type="text" class="form-control" id="nombreCliente" placeholder="Nombre del Cliente">
+                    </div>
+                    <div class="form-group">
+                        <label for="rutCliente">RUT del Cliente (opcional)</label>
+                        <input type="text" class="form-control" id="rutCliente" placeholder="RUT del Cliente">
+                    </div>
+                    <div class="form-group">
+                        <label for="seleccionarProducto">Seleccionar Producto</label>
+                        <select class="form-control" id="seleccionarProducto">
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="agregarAlCarritoBoton">Agregar al Carrito</button>
+                </form>
+                <h2>Carrito de Compras</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cartItems">
+                        <!-- Aquí se mostrarán los elementos del carrito -->
+                    </tbody>
+                </table>
+                <h3>Total: <span id="cartTotal">$0</span></h3>
+                <button type="button" class="btn btn-success" id="botonComprar">Comprar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
